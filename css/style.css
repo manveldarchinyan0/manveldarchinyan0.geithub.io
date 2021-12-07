@@ -151,7 +151,7 @@ header{
   }
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; 
     background-color: black;
     color: white;
   }
