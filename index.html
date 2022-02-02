@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main .members{
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 50px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            justify-content: center;
+        }
+        .members .member{
+            display: flex;
+            height: 200px;
+            width: 400px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 5px 5px 2px #aaaaaa;
+        }
+        .members .member .photo{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: black;
+            overflow: hidden;
+        }
+        .members .member .photo img{
+            width: 100%;
+            height: 100%;
+        }
+        .members .member .row2{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .members .member .row2 img{
+            width: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="members">
+                <div class="member">
+                    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Baby.tux.sit-black-800x800.png/640px-Baby.tux.sit-black-800x800.png" alt="" srcset=""></div>
+                    <div class="row2">
+                        <div class="header">Ashot Suqiasian</div>
+                        <img src="data:image/png;base64,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" alt="">
+                        <div class="role">Manager</div>
+                        <div style="font-family:sans-serif;
+                        font-weight:500;" class="description">studied in ***** university. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, rerum?</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Baby.tux.sit-black-800x800.png/640px-Baby.tux.sit-black-800x800.png" alt="" srcset=""></div>
+                    <div class="row2">
+                        <div class="header">Ashot Suqiasian</div>
+                        <img src="data:image/png;base64,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" alt="">
+                        <div class="role">Manager</div>
+                        <div style="font-family:sans-serif;
+                        font-weight:500;" class="description">studied in ***** university. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, rerum?</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Baby.tux.sit-black-800x800.png/640px-Baby.tux.sit-black-800x800.png" alt="" srcset=""></div>
+                    <div class="row2">
+                        <div class="header">Ashot Suqiasian</div>
+                        <img src="data:image/png;base64,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" alt="">
+                        <div class="role">Manager</div>
+                        <div style="font-family:sans-serif;
+                        font-weight:500;" class="description">studied in ***** university. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, rerum?</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Baby.tux.sit-black-800x800.png/640px-Baby.tux.sit-black-800x800.png" alt="" srcset=""></div>
+                    <div class="row2">
+                        <div class="header">Ashot Suqiasian</div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWwAAACKCAMAAAC5K4CgAAAAmVBMVEX/////0hP/0gD/0QD/1AD/1gD///3/0g7//fP/+ub//vr/++v/9c7/+uX//O7/+eL/9Mj/8sH/+Nv/+N3/99X/3j7/77H/8bn/5HX/9tH/4mb/88T/2B//65j/7KD/2gD/3T//31T/5Xb/4F7/54T/6ZH/7J//7qn/4WP/3Uz/4Vn/6Iv/3kP/2Cj/3DD/6ID+5WP/1if/2UPHdVepAAAJ0ElEQVR4nO2c2XaDOhJFscRkPMbGY3DAUzzjvvf/P64BD4AAlYZ49UPXeU3W5lSpkAohbBgoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUChV9WxdwkCX0PO0LWgTxroAIZ2+NAH2+luTcJ5pAozrUJcQ+LoEAfnmSbMwh+ZaD7Cw1toWjpqEL7LUAwhpSUy90raP1Oz+by0Ya10L9skxP1/aI6vl6NVV12oRrdL2E4De3ZVYoHql/W22yFwHIKQ5abVMrTl3mRIWugCtWfucEnRmbTslWJ8u7aSwWy261ljLuxlhqw4YpwDnqg4wRmZCIBoWjG5KoJ8u7Q1NrtLSmTKPJCOoT5lLbQsPgqVe2vb2QfhsaWeFnVSFemkvnoSt6pQ5MDOAM1F18AqCqi8c3YcH+tmGZJOVpU5dPapKo7T/wMKLoFra9vFJ+Ghpj4PHRZLSVixM33oRFLuBwQugPGvnFk6KhO6b8MnSvj9HVL2uljlBrbT1LWxygmJp50FYOl0VX+PAeV1FsdEdvWpCtbTbOcDRt6BW2osC4XOlnVeVaqM7LxCUuoFL0YJSu78pEpQKc1kM4lOzdi/IL5LUlQrBLBBUGpKeVQAotfujogV6lgcYixLhqEAQ0a4womp1taFFgiU/a1/KFhRm7U2ZoLBwLMuEkTxBQP1iVSWlHUkT2maJIF9X7aAEUGj3x2WCwpPsyNQliKhc2Cp1dadlgvSsfdG2sGEJ0qV9ZIL4SGkzha3Q6PZYgmw30Mm7oVdpS077g4oF2YVjbLKETzQke6YmHnUlY5W9NeQaXduuFLakhYRwrxK6MkHYxpxWCCO5NMByBwF7kZaz7vXFr+KO6gidvjjAv1UBJykLPlvYaWlLERZVAl22XWEAX16/1z3sltebU7lKi9wm5/l+Nmq7PLtef9D9aSRE580KIPAsOC8L3IylFrgEyILhdQbDNIhqwaSEaHsHCVx5btufrebr2CKmSZ0am+l1aPJHM5hsk4z5PddjCYvpXpSQ2PXbZUJmQRiwqQIyC/oEKAjnSYjqggCy7Lmj2c/9HAUPfq1B1m7yj1YYrTerabfj2Snh976NQklCkNZ5SnhY2Kpb8F4WAosqWvBcPyGcZYIgOWHREUr5b2xaFiFEBM9czCHUtEJ/pUkINimAqgBaDwujlTLBIRmhd9EmiCTbnleWbJkrpc+FWy1C4FfaYTmFvmEvtSyEA8PbVvoOCdFgIDiR7NheUsLm4+yKRrJokJ41qraJ4hbCsaaFNNeG1njRuC2Y66SnVs22Ezyfp+6qhEdJJD21soXwWVPK40WDR6Zs5fGSybVhrNRCpa9cG7Zismj8uv0UBzy3oJptGr+O8XnVZyAxwkQm18kqqRIqjfN9AlspWTTOlxWlAS9aqHniFCFM8tnWUxoveu1I5dowfuRDzUtCNVkkLi4rCgNeynV6d0j3EsVcq40XncjmOsm27GUqC/CvLIGUAzUOsrmiE2YLTnrA6YTp2KSzTSfiOxDKodK40uxIjheJ2Nb0IJerOguyhEpVVjfg+ISJ2kbJVCbbNYEmyZIxSq/VZWUqBdC3ENdUpdQNSq8qdZ1qJp7thmZHojRpVDfVzcQjpUHtXDmVsBDXVqXE3UGv6huAX5ZgthsXBeFQm2wOhQFBQ5xfwoSogSAexEnn65GhWLY5N4/geDWXRFcQ0LwuDat70LWEU2NVzgQJZ72NbaFQ6b+ciepbiNAcqLFgX4bVifAsiAWx5mTqSyTbdKv7VZQPGyWcTBlCdwfh3n4C2SYnbm8rkG265a5sAncHPWp/gWbUvIwqy+HnOgkVJGz5BD8GckXWwHNEt+4dTYkAWDCG0IiTP8g1vElBphABejAAj7JBzybmAbIAPXfDp+mgXSmtz0beWkKR3kEC5POiG+gOsnCECHuIcAIq2/yBCLBsY8K/CHzqz47AO5AP8NbAPj50LMm2r4AF6PsY24CmkT/5wsYL+RdptUKA0IcIzsTmvpfuQHO2A+1H9KBUOdBT9gAOAkiDiAbg2yETWJ1G4FNg/bPfW5VTSBVZwEsoHyYAwwU/XFl/cFIHfgCDlgb4AQw4zzqDLQBHamEL0FFteI/lLw79wbvK0NIAv0YAugl4o9Rc8S3Ab1WhhmYDV4z2rxcYNYfbWNENn7CECfxuArYAfdoMv+4HLIDNSEIABlxEE/AqzpU7W7kiBB7AgwN1+DtANrTCgs/aNtgmtOhSe9K2BXYFLK7PylnjOgIPADYj6XE77hLbqTuixxAi7grZgTf+nEj/J2cEthdN7q/KwJ1AQuAdH6o5/loR/0OihYAFfkMzFNhXt+TfPTKq7C5S02QvzH/WrbxAqCFYvG6iYoHUALgWpgJBcC3UBsHebwrfCDFi3iM65mmxODHXIdylYc8Szn73yhAorxf4pQzg1F2sWQD3cfvCEtb+kA2CcnuqHUs4j78jlgBuEkEqfeDlmJPsK5bvcrK4S4O9LBMev870NSkTeA1NaWvFIZOsBIdlC+Q/vCDOxX9NgnhYKCfL5PZU6zLhlBXxLC4du4R3aAB5hU2FJM73zfp9LVyHuzS4JUL0/uRoFpUIHA9FgBkXLJhFAK8VCIqE3EJpxLnf59iFZSOpl/eMU0q3+i9NPOW+r+KQ2/QNs8uFwVsa2gVCXJxZ7Vkh1rB5uPr/5B9xx9NiPLNCugPOEuvmEy5LiN8Ep3qKIVfejCT1UgpiGudwxVMMb72/9CbBL5MPb/pON29peP2EQZLqH5ZwmLwKw2p+1vXfgNsPE428hQNDcA+RgAXj+0Uw4ykbxM+7ukO5I34VPbclSLCvaUPfTnlLw3NbgtxWdYSf25PQ3E08N2dosKopPSELjyCcpF5qSs89PJNFOA3NwWwY7lT931cQmu8PViRL9a7hJnV/svuQtzRcHoRLw6j3V7eM0NxNrNIFllj3BoD7mwEI5xVG1owkQTTME4mF1CPvFUb2uSy57RsInf2D8NtMENHcTDrKDecG66ROeT9ncSQJ4c55YmjvA8L7dDMDzDkWsvHivcI4J/zgznny6lz4Frx14iHY8YJICfyGBpR3ouYR2DrsXCzOATf3X2otAUJ7lxAahss2ImodgR+aSJMVeI0DfiOghc4uINfGRdr9h1hzYMu8fbe0fhUufclyEpiH2vfmr3UG4Vngwao3Dxu2Jux+uBYAtHdhYzo74Vngd0UGm7Cx9sfhWeB3RcbzQGuF7Aju0Y4brzIQ/Jbfb2q8evoWBAmjxt5vJPhzH77qqUoUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQqP9n/Rfojq4WVqo0/wAAAABJRU5ErkJggg==" alt="">
+                        <div class="role">Manager</div>
+                        <div style="font-family:sans-serif;
+                        font-weight:500;" class="description">studied in ***** university. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, rerum?</div>
+                    </div>
+                </div>
+        </div>
+    </main>
+</body>
+</html>
