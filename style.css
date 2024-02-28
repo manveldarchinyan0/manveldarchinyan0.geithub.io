@@ -1,0 +1,1082 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+body{
+    background-color: rgb(39,39,39);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+/*Header*/
+
+.header{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgba(37,37,37,1);
+    padding-bottom: 100px;
+
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header .nav .logo::before{
+    font-size: 20px;
+    content: "A";
+    color: rgb(0,170,92);
+}
+.header .nav .logo{
+    font-size: 20px;
+    margin-left: 17px;
+    color: white;
+
+}
+.header .nav .logo::after{
+    font-size: 20px;
+    content: "z";
+    color: rgb(0,170,92);
+}
+.header .nav .navMenu ul{
+    display: flex;
+    color: white;
+}
+.header .nav li{
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    cursor: pointer;
+
+}
+.header .nav .contactBtn{
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(0,170,92);
+    color: white;
+    margin-right: 17px;
+}
+
+
+.header .passionate {
+    display: flex;
+}
+.header .passionate .headerName{
+    font-size: 25px;
+    color: white;
+    margin-top: 150px;
+}
+.header .passionate .headerName2{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+.header .passionate .lSide{
+    width: 55%;
+}
+.header .passionate .lSide .headerAbout{
+    color: white;
+    display: inline;
+}
+.header .passionate .lSide .greenAb{
+    display: inline;
+    color: rgb(0,170,92);
+}
+.header .passionate .lSide .bookCall{
+    margin-top: 10px;
+    width: 95px;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(0,170,92);
+    color: white;
+}
+
+.header .passionate .rSide{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    
+}
+.header .passionate .rSide .img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.header .passionate .rSide img{
+    width: 400px;
+    height: 400px;
+}
+.header .passionate .rSide .responsiveBtn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top :290px;
+    left: 40px;
+    color: white;
+    padding: 7px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border-top: 1px  solid rgb(0,170,92);
+    border-left: 1px  solid rgb(0,170,92);
+    border-right: 1px  solid rgb(0,170,92);
+    box-shadow: inset 1px 1px 15px  rgba(0,170,92,0.3);
+    font-size: 14px;
+    
+}
+.header .passionate .rSide .responsiveBtn .text{
+    font-size: 13px;
+    margin-left: 3px;
+}
+.header .passionate .rSide .responsiveBtn span{
+    color: rgb(0,170,92);
+    font-size: 25px;
+}
+.header .passionate .rSide .qualityBtn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top :220px;
+    left: 250px;
+    color: white;
+    padding: 7px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border-top: 1px  solid rgb(0,170,92);
+    border-left: 1px  solid rgb(0,170,92);
+    border-right: 1px  solid rgb(0,170,92);
+    box-shadow: inset 1px 1px 15px  rgba(0,170,92,0.3);
+}
+.header .passionate .rSide .qualityBtn .text{
+    font-size: 13px;
+    margin-left: 3px;
+}
+.header .passionate .rSide .qualityBtn span{
+    color: rgb(0,170,92);
+    font-size: 25px;
+}
+
+
+
+
+/*Main*/
+
+main{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+main .aboutMe{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+main .aboutMe .lSide{
+    width: 20%;
+    position: relative;
+}
+main .aboutMe .img{
+    width: 170px;
+    height: 170px;
+    
+    border-radius: 50%;
+    background-color: rgba(0,170,92,0.3);
+    border-bottom: 2px solid rgb(0,170,92);
+    border-left: 1px solid rgb(0,170,92);
+    border-right: 1px solid rgb(0,170,92);
+}
+main .aboutMe .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+main .aboutMe .info{
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: absolute;
+    width: 170px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border-top: 1px  solid rgb(0,170,92);
+    border-left: 1px  solid rgb(0,170,92);
+    border-right: 1px  solid rgb(0,170,92);
+    box-shadow: inset 1px 1px 15px  rgba(0,170,92,0.3);
+    bottom: -40px;
+}
+main .aboutMe .info .name{
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    padding-bottom: 3px;
+}
+main .aboutMe .info .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3px;
+}
+main .aboutMe .info .icons .icon{
+    color: rgb(37, 37, 37);
+    width: 19px;
+    height: 19px;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .aboutMe .rSide {
+    width: 75%;
+}
+main .aboutMe .rSide .btnAbout{
+    background-color: rgb(43, 43, 43);
+    width: 63px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .aboutMe .rSide .title{
+    margin-top: 7px;
+    font-weight: 600;
+    color: rgb(0,170,92);
+    font-size: 20px;
+}
+
+main .aboutMe .rSide .text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 17px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+/*Skills*/
+
+
+
+
+
+main .skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+main .skills .skillBtn{
+    
+    background-color: rgb(43, 43, 43);
+    width: 53px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .skills .title{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(0,170,92);
+    font-size: 29px;
+}
+main .skills .icons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .skills .icons .icon{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin-left: 10px;
+}
+main .skills .icons .icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+main .skills .icons .icon .iconName{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*Work*/
+
+
+
+
+
+
+
+main .work{
+    margin-top: 200px;
+}
+
+main .work .workBtn{
+    background-color: rgb(43, 43, 43);
+    width: 53px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .work .workTitle{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(0,170,92);
+    font-size: 29px;
+}
+main .work .myWorks .pcProject{
+    display: flex;
+    justify-content: center;
+}
+.work .myWorks .swiper{
+    display: none;
+}
+main .work .myWorks .project{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    width: 200px;
+    height: 260px;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 10px;
+}
+main .work .myWorks .project .img{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0 ;
+}
+main .work .myWorks .project img{
+    width: 100%;
+}
+main .work .myWorks .project .projectInfo{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+main .work .myWorks .project .projectInfo .projectT{
+    color: white;
+    font-size: 12px;
+}
+main .work .myWorks .project .projectInfo .projectAb{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 9px;
+    color: white;
+    font-size: 9px;
+    font-weight: lighter;
+}
+main .work .myWorks .project .projectInfo .projectU{
+    margin-top: 4px;
+    display: flex;
+    margin-top: 8px;
+}
+main .work .myWorks .project .projectInfo .projectU .lang{
+    
+    font-size: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 5px;
+    margin-right: 3px;
+    color: white;
+}
+main .work .myWorks .project .projectInfo .projectBottom{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectL{
+    display: flex;
+    align-items: center;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectL a{
+    
+    color: white;
+    font-size: 8px;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectL i{
+    padding-top: 5px;
+    padding-right: 3px;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectGithub{
+    display: flex;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectGithub a{
+    color: white;
+    font-size: 8px;
+}
+main .work .myWorks .project .projectInfo .projectBottom .projectGithub i{
+    padding-top: 4px;
+    padding-right: 3px;
+}
+main .work .bottomBtn{
+    display: flex;
+    justify-content: center;
+}
+main .work .seeMore{
+    margin-top: 20px;
+    box-shadow: inset 1px 1px 15px  rgba(0,170,92,0.3);
+    border-radius: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0,170,92);
+    border: 1px solid rgb(0,170,92);
+}
+main .work .seeMore .sText{
+    font-size: 12px;
+}
+
+
+
+
+
+/*Experience*/
+
+
+
+
+main .experience{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .experience .experienceBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .experience .expBtn{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+}
+main .experience .expTitle{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(0,170,92);
+    font-size: 29px;
+}
+
+main .experience .workExperience{
+    width: 100%;
+}
+main .experience .workExperience .workExp{
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 15px;
+    border: 2px solid rgb(50, 50, 50);
+}
+main .experience .workExperience .workExp .top{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .experience .workExperience .workExp .top .role{
+    font-size: 15px;
+}
+main .experience .workExperience .workExp .top .rSide{
+    display: flex;
+    align-items: center;
+}
+main .experience .workExperience .workExp .top .rSide .time{
+    padding-right: 7px;
+}
+main .experience .workExperience .workExp .top .rSide div{
+    font-size: 15px;
+    display: inline;
+}
+
+main .experience .workExperience .workExp .bottom{
+    
+    margin-top: 10px;
+    display: none;
+}
+main .experience .workExperience .open .bottom{
+    display: block;
+    border-top: 2px solid rgb(50,50,50);
+}
+main .experience .workExperience .workExp .bottom .bottomT{
+    display: flex;
+    margin-top: 10px;
+    color: rgb(168,168,168);
+    font-size: 13px;
+}
+main .experience .workExperience .workExp .bottom .bottomT .place{
+    display: flex;
+    
+}
+main .experience .workExperience .workExp .bottom .bottomT .place i{
+    padding-right: 10px;
+}
+main .experience .workExperience .workExp .bottom .bottomT .link{
+    margin-left: 15px;
+    display: flex;
+}
+main .experience .workExperience .workExp .bottom .bottomT .link i{
+    padding-right: 10px;
+}
+main .experience .workExperience .workExp .bottom .about{
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+}
+main .experience .workExperience .workExp .bottom .bottomB{
+    display: flex;
+    margin-top: 10px;
+}
+main .experience .workExperience .workExp .bottom .bottomB .languages{
+    color: rgb(168,168,168);
+    font-size: 10px;
+    margin-right: 10px;
+}
+main .experience .workExperience .workExp .top .rSide .icon i:last-child{
+
+    opacity: 0;
+    display: none;
+}
+main .experience .workExperience .workExp .top .rSide .icon i:first-child{
+
+    display: inline;
+    opacity: 1;
+}
+main .experience .workExperience .open .top .rSide .icon i:first-child{
+
+    display: none;
+    opacity: 0;
+}
+main .experience .workExperience .open .top .rSide .icon i:last-child{
+
+    display: inline;
+    opacity: 1;
+}
+
+
+
+/*Footer*/
+
+footer .footer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(168,168,168);
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+footer {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+footer .footer .lSide .logo::before{
+    font-size: 20px;
+    content: "A";
+    color: rgb(0,170,92);
+    
+}
+footer .footer .lSide .logo{
+    font-size: 20px;
+    color: white;
+
+}
+footer .footer .lSide .logo::after{
+    font-size: 20px;
+    content: "z";
+    color: rgb(0,170,92);
+}
+footer .footer .rSide{
+    display: flex;
+    color: white;
+}
+footer .footer .rSide .mail{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer .footer .rSide .mediaIcons{
+    display: flex;
+    justify-content: center;
+}
+footer .footer .rSide .mediaIcons .icon{
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(37, 37, 37);
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+/*Medias*/
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        text-align: center;
+    }
+    .header{
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 20px;
+        width: 100%;
+        background-color: rgba(37,37,37,1);
+        padding-bottom: 100px;
+    
+    }
+
+    .header .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .header .nav .logo::before{
+        font-size: 20px;
+        content: "A";
+        color: rgb(0,170,92);
+    }
+    .header .nav .logo{
+        font-size: 20px;
+        margin-left: 15px;
+        color: white;
+    
+    }
+    .header .nav .logo::after{
+        font-size: 20px;
+        content: "z";
+        color: rgb(0,170,92);
+    }
+    .header .nav .navMenu ul{
+        display: flex;
+        color: white;
+    }
+    .header .nav li{
+        padding-left: 8px;
+        padding-right: 8px;
+        list-style: none;
+        cursor: pointer;
+        font-size: 13px;
+    
+    }
+    .header .nav .contactBtn{
+        font-size: 13px;
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        color: white;
+        margin-right: 15px;
+    }
+    .header .passionate .lSide .bookCall{
+        margin-top: 10px;
+        width: 95px;
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        font-size: 13px;
+    }
+
+
+
+    .header{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    
+    }
+    .header .passionate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .passionate .lSide{
+        width: 100%;
+    }
+    .header .passionate .headerName{
+        margin-top: 90px;
+    }
+
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    main .aboutMe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    main .aboutMe .lSide{
+        width: auto;
+    }
+    main .aboutMe .rSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    main .aboutMe .rSide .text{
+        font-size: 12px;
+    }
+    main .skills{
+        margin-top: 100px;
+    }
+    main .work{
+
+        margin-top: 100px;
+    }
+    main .work .myWorks .pcProject{
+        display: none;
+    }
+    .work .myWorks .swiper {
+        display: block;
+    }
+    .work .myWorks .swiper .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .work .myWorks .swiper .swiper-scrollbar-drag{
+        background-color: rgb(0,170,92);
+    }
+    .work .myWorks .swiper .swiper-slide .project{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        min-width: 300px;
+        height: 320px;
+        border: 2px solid rgb(50, 50, 50);
+        border-radius: 10px;
+    }
+
+    main .experience .workExperience .workExp .bottom{
+        text-align: start;
+        color: black;
+    }
+    main .experience .workExperience .workExp .top .role{
+        font-size: 12px;
+    }
+    main .experience .workExperience .workExp .top .rSide .time {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    footer .footer{
+        margin-top: 60px;
+    }
+    footer .footer .rSide .mail{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer .footer .rSide .number{
+        font-size: 12px;
+    }
+    footer .footer .rSide .mediaIcons .icon{
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(37, 37, 37);
+        width: 17px;
+        height: 17px;
+        font-size: 11px;
+        background-color: white;
+        border-radius: 50%;
+    }
+  }
+
+
+/*600PX*/
+
+
+  @media only screen and (max-width: 600px) {
+
+    .header .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .header .nav .logo::before{
+        font-size: 20px;
+        content: "A";
+        color: rgb(0,170,92);
+    }
+    .header .nav .logo{
+        font-size: 20px;
+        margin-left: 10px;
+        color: white;
+    
+    }
+    .header .nav .logo::after{
+        font-size: 20px;
+        content: "z";
+        color: rgb(0,170,92);
+    }
+    .header .nav .navMenu ul{
+        display: flex;
+        color: white;
+    }
+    .header .nav li{
+        padding-left: 3px;
+        padding-right: 3px;
+        list-style: none;
+        cursor: pointer;
+        font-size: 11px;
+    
+    }
+    .header .nav .contactBtn{
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        color: white;
+        margin-right: 10px;
+        font-size: 11px;
+    }
+    .header .passionate .lSide .bookCall{
+        margin-top: 10px;
+        width: 80px;
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        font-size: 11px;
+    }
+
+    .header .passionate .rSide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header .passionate .rSide .img{
+        width: 270px;
+        height: 270px;
+        position: relative;
+    }
+    .header .passionate .rSide img{
+        width: 100%;
+        height: 100%;
+    }
+    .header .passionate .rSide .responsiveBtn{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top :185px;
+        left: -30px;
+        padding: 7px;
+        font-size: 14px;
+        
+    }
+    .header .passionate .rSide .responsiveBtn .text{
+        font-size: 13px;
+        margin-left: 3px;
+    }
+    .header .passionate .rSide .responsiveBtn span{
+        color: rgb(0,170,92);
+        font-size: 25px;
+    }
+    .header .passionate .rSide .qualityBtn{
+        position: absolute;
+        top :140px;
+        left: 200px;
+    }
+    .header .passionate .rSide .qualityBtn .text{
+        font-size: 13px;
+        margin-left: 3px;
+    }
+    .header .passionate .rSide .qualityBtn span{
+        color: rgb(0,170,92);
+        font-size: 25px;
+    }
+  }
+
+
+  /*450PX*/
+
+
+  @media only screen and (max-width: 450px) {
+
+    
+    .work .myWorks .swiper .swiper-slide .project{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        min-width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border: 2px solid rgb(50, 50, 50);
+        border-radius: 10px;
+    }
+    main .experience .workExperience .workExp .top .role{
+        font-size: 8px;
+        padding-top: 4px;
+    }
+    main .experience .workExperience .workExp{
+        padding: 8px;
+    }
+    main .experience .workExperience .workExp .top .rSide i{
+        font-size: 13px;
+    }
+    main .experience .workExperience .workExp .top .rSide .time{
+        padding-top: 3px;
+        display: inline-block;
+        font-size: 8px;
+        padding-bottom: 0;
+        
+    }
+
+    footer .footer .rSide .mail{
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer .footer .rSide .number{
+        padding-top: 1px;
+        font-size: 10px;
+    }
+    footer .footer .rSide .mediaIcons .icon{
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(37, 37, 37);
+        width: 13px;
+        height: 13px;
+        font-size: 8px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+  }
+
+  /*400PX*/
+  @media only screen and (max-width: 400px) {
+    .header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .header .nav .logo::before{
+        font-size: 20px;
+        content: "A";
+        color: rgb(0,170,92);
+    }
+    .header .nav .logo{
+        font-size: 20px;
+        margin-left: 10px;
+        color: white;
+    
+    }
+    .header .nav .logo::after{
+        font-size: 20px;
+        content: "z";
+        color: rgb(0,170,92);
+    }
+    .header .nav .navMenu ul{
+        display: flex;
+        color: white;
+    }
+    .header .nav li{
+        padding-left: 3px;
+        padding-right: 3px;
+        list-style: none;
+        cursor: pointer;
+        font-size: 10px;
+    
+    }
+    .header .nav .contactBtn{
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        color: white;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    .header .passionate .lSide .bookCall{
+        margin-top: 10px;
+        width: 95px;
+        border-radius: 7px;
+        padding: 3px 7px 3px 7px;
+        font-size: 10px;
+    }
+
+    main{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+  }
